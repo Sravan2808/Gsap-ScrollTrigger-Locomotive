@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 30px;
+}
+
+#nav-part2{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+}
+#nav h3{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#main h1{
+  font-size: 150px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 120px;
+  position: relative;
+  z-index: 9;
+  /* background-color: red; */
+  width: 80%;
+  margin-left: 10%;
+}
+
+#main h1:nth-child(2){
+  margin-top: 180px;
+}
+#main h1:nth-child(3){
+  text-align: center;
+}
+#main h1:nth-child(4){
+  text-align: center;
+}
+
+img{
+  height: 400px;
+  position: absolute;
+  top:12%;
+  left:40%
+}
+img1{
+  rotate: 20deg;
+}
+#img2{
+  rotate: 10deg;
+}
+footer{
+  width: 98%;
+  margin: 80px 0;
+  padding-top:30px ;
+  padding-left: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer h3{
+  width: 20%;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+footer .center {
+  width: 60%;
+  font-size: 14px;
+}
+footer .center p{
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #nav-part2 {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  #main h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  #main h1:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  img {
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer h3, footer .center {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #main h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  img {
+    height: 300px;
+  }
+}
+
